@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jcasc
+  labels:
+    app: jcasc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jcasc
+  template:
+    metadata:
+      labels:
+        app: jcasc
+    spec:
+      containers:
+        - name: jcasc
+          image: figaw/jcasc:latest
+          ports:
+            - containerPort: 88
