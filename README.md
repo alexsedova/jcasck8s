@@ -1,5 +1,4 @@
 # jcasck8s
-
 There is test project to try run jcasc on k8s cluster. Jcasc image stolen from here https://github.com/figaw/configuration-as-code-jenkins-k8s/tree/master/jcasc
 
 ## Minikube
